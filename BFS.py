@@ -1,14 +1,8 @@
-Root = {'value': 1, 'depth':1}
+from succ import Succ
 
-def Succ(node):
-    if node['value'] == 5:
-        return []
+def BFS_Tree(node):
+    nodes =[node]
+    visited_nodes = []
 
-    elif node['value'] == 4:
-        return [{'value':5, 'depth': node['depth']+1}]
-
-    else:
-        return [{'value': node['value']+1, \
-                 'depth':node['depth']+1}, \
-                 {'value':node['value']+2, \
-                 'depth':node['depth']+1}]
+    while len(node) > 0:
+        
