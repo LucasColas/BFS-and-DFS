@@ -9,3 +9,5 @@ def BFS_Tree(node):
         visited_nodes.append(current_node)
         nodes.extend(Succ(current_node))
     return nodes
+
+print(BFS_Tree(Root))
