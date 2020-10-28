@@ -1,4 +1,4 @@
-Root = {'value': 1, 'depth':1}
+
 
 def Succ(node):
     if node['value'] == 5:
